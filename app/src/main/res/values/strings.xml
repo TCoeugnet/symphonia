@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">symphonia</string>
+    <string name="app_name">Symphonia</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
 </resources>
