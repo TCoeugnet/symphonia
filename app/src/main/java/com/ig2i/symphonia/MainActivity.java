@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         ButterKnife.inject(this); // Inject all the widgets
         Settings.init(this); // Initialize properties object
 
-        Log.d("SYM/Test", "TEST=" + Settings.get("TEST"));
+        Log.d("SYM/Test", "TEST=" + Settings.get("TEST")); //Test 
     }
 
 
