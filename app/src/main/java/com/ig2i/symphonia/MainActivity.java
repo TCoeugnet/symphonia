@@ -2,7 +2,6 @@ package com.ig2i.symphonia;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -18,8 +17,6 @@ public class MainActivity extends ActionBarActivity {
 
         ButterKnife.inject(this); // Inject all the widgets
         Settings.init(this); // Initialize properties object
-
-        Log.d("SYM/Test", "TEST=" + Settings.get("TEST")); //Test 
     }
 
 
