@@ -1,15 +1,14 @@
 package com.ig2i.symphonia;
 
 
-
-import com.doreso.sdk.utils.DoresoErrorCode;
-import com.doreso.sdk.utils.DoresoErrorMsg;
-
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.os.Handler;
 import android.os.Message;
+
+import com.doreso.sdk.utils.DoresoErrorCode;
+import com.doreso.sdk.utils.DoresoErrorMsg;
 
 /**
  * Created by Thomas on 06/05/2015.

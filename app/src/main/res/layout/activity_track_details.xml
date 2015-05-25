@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ig2i.symphonia.TrackDetailsActivity">
+
+    <TextView android:text="Song name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songname"
+        android:layout_gravity="center|left"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titre"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Artiste"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/songname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView android:text="Artist name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/artistname"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:id="@+id/imageButton"
+        android:src="@mipmap/album_placeholder"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_below="@+id/albumname"
+        android:layout_alignParentEnd="true"
+        android:padding="-5dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Album name"
+        android:id="@+id/albumname"
+        android:layout_gravity="right|top"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Paroles"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Ici seront affichées les paroles"
+            android:id="@+id/lyrics"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true" />
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButton3"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:background="@mipmap/youtube"
+        android:onClick="openYoutube"/>
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButton4"
+        android:background="@mipmap/deezer"
+        android:layout_below="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:onClick="openDeezer"/>
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButton5"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/spotify"
+        android:onClick="openSpotify"/>
+
+</RelativeLayout>

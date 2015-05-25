@@ -8,11 +8,15 @@ import com.doreso.sdk.utils.DoresoMusicTrack;
 
 public interface MusicRecordListener {
 
+    //Chanson reconnue
+    public void onSuccess(DoresoMusicTrack doresoMusicTrack);
 
+    //Chanson non reconnue
+    public void onFailure();
 
-    public void onSuccess(DoresoMusicTrack[] doresoMusicTracks);
+    //Erreur lors de la tentative de reconnaissance
+    public void onError(int errorcode, String msg);
 
-    public void onFailure(int errorcode, String msg);
-
+    //En cours de reconnaissance
     public void onProcessing(byte[] buffer, double volume);
 }
